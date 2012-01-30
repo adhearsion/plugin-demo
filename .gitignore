@@ -2,3 +2,5 @@
 *.swo
 Gemfile.lock
 coverage/
+vendor/
+.bundle/
