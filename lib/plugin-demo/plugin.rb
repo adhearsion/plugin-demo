@@ -28,7 +28,7 @@ module PluginDemo
     end
 
     # Registering a generator
-    Adhearsion::Generators.add_generator :"plugin_demo:controller", PluginDemo::ControllerGenerator
+    generators :"plugin_demo:controller" => PluginDemo::ControllerGenerator
 
   end
 end
