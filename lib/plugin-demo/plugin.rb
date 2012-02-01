@@ -1,3 +1,5 @@
+require "plugin-demo/generators/controller_generator"
+
 module PluginDemo
   class Plugin < Adhearsion::Plugin
     # Actions to perform when the plugin is loaded
@@ -26,7 +28,7 @@ module PluginDemo
     end
 
     # Registering a generator
-    Adhearsion::Generators.add_generator("plugin_demo:controller".to_sym, PluginDemo::ControllerGenerator)
+    Adhearsion::Generators.add_generator :"plugin_demo:controller", PluginDemo::ControllerGenerator
 
   end
 end
