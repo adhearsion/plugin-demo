@@ -25,5 +25,8 @@ module PluginDemo
       end
     end
 
+    # Registering a generator
+    Adhearsion::Generators.add_generator("plugin_demo:controller".to_sym, PluginDemo::ControllerGenerator)
+
   end
 end
